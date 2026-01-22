@@ -454,7 +454,7 @@ YAHOO.extend(CStudioForms.Controls.FileName, CStudioForms.CStudioFormField, {
       YAHOO.util.Dom.addClass(editFileNameEl, 'cstudio-form-control-filename-edit');
       var editFileNameBtn = document.createElement('input');
       editFileNameBtn.type = 'button';
-      editFileNameBtn.value = 'Edit';
+      editFileNameBtn.value = 'Bearbeiten';
       editFileNameBtn.style.padding = '1px 5px';
       editFileNameBtn.style.minWidth = '0';
       editFileNameBtn.style.marginLeft = '5px';

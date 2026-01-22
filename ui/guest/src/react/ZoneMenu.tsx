@@ -426,7 +426,7 @@ export function ZoneMenu(props: ZoneMenuProps) {
     <>
       <Box display="flex">
         {hasEditAction && !isLockedItem && (
-          <UltraStyledTooltip title="Edit" key="edit">
+          <UltraStyledTooltip title="Bearbeiten" key="edit">
             <UltraStyledIconButton size="small" onClick={onEdit}>
               <PencilIcon />
             </UltraStyledIconButton>
@@ -435,14 +435,14 @@ export function ZoneMenu(props: ZoneMenuProps) {
         {showCodeEditOptions && (
           <>
             {itemAvailableActions.editTemplate && (
-              <UltraStyledTooltip title="Edit template" key="editTemplate">
+              <UltraStyledTooltip title="Vorlage bearbeiten" key="editTemplate">
                 <UltraStyledIconButton size="small" onClick={onEditTemplate}>
                   <FreemarkerIcon />
                 </UltraStyledIconButton>
               </UltraStyledTooltip>
             )}
             {itemAvailableActions.editController && (
-              <UltraStyledTooltip title="Edit controller" key="editController">
+              <UltraStyledTooltip title="Controller bearbeiten" key="editController">
                 <UltraStyledIconButton size="small" onClick={onEditController}>
                   <GroovyIcon />
                 </UltraStyledIconButton>
@@ -451,14 +451,14 @@ export function ZoneMenu(props: ZoneMenuProps) {
           </>
         )}
         {!isLockedItem && showAddItem && (
-          <UltraStyledTooltip title="Add new item" key="addNewItem">
+          <UltraStyledTooltip title="Hinzufügen" key="addNewItem">
             <UltraStyledIconButton size="small" onClick={onAddRepeatItem}>
               <AddCircleOutlineRoundedIcon />
             </UltraStyledIconButton>
           </UltraStyledTooltip>
         )}
         {showDuplicate && (
-          <UltraStyledTooltip title="Duplicate item" key="duplicateItem">
+          <UltraStyledTooltip title="Duplizieren" key="duplicateItem">
             <UltraStyledIconButton size="small" onClick={onDuplicateItem}>
               <ContentCopyRoundedIcon />
             </UltraStyledIconButton>
@@ -468,14 +468,14 @@ export function ZoneMenu(props: ZoneMenuProps) {
           (!isLockedItem || !isEmbedded) &&
           !isOnlyItem && [
             !isFirstItem && (
-              <UltraStyledTooltip title="Move up/left (← or ↑)" key="moveUp">
+              <UltraStyledTooltip title="Nach links/oben verschieben (← oder ↑)" key="moveUp">
                 <UltraStyledIconButton size="small" onClick={onMoveUp}>
                   <ArrowUpwardRoundedIcon />
                 </UltraStyledIconButton>
               </UltraStyledTooltip>
             ),
             !isLastItem && (
-              <UltraStyledTooltip title="Move down/right (→ or ↓)" key="moveDown">
+              <UltraStyledTooltip title="Nach rechts/unten verschieben (→ oder ↓)" key="moveDown">
                 <UltraStyledIconButton size="small" onClick={onMoveDown}>
                   <ArrowDownwardRoundedIcon />
                 </UltraStyledIconButton>
@@ -483,14 +483,14 @@ export function ZoneMenu(props: ZoneMenuProps) {
             )
           ]}
         {isTrashable && !isLockedItem && (
-          <UltraStyledTooltip title="Trash (⌫)" key="trash">
+          <UltraStyledTooltip title="Entfernen (⌫)" key="trash">
             <UltraStyledIconButton size="small" onClick={onTrash} ref={trashButtonRef}>
               <DeleteOutlineRoundedIcon />
             </UltraStyledIconButton>
           </UltraStyledTooltip>
         )}
         {isMovable && (!isLockedItem || !isEmbedded) && (
-          <UltraStyledTooltip title="Move" key="move">
+          <UltraStyledTooltip title="Verschieben" key="move">
             <UltraStyledIconButton size="small" draggable sx={{ cursor: 'grab' }} onDragStart={onDragStart}>
               <DragIndicatorRounded />
             </UltraStyledIconButton>
@@ -500,13 +500,13 @@ export function ZoneMenu(props: ZoneMenuProps) {
       <Box display="flex">
         <Divider orientation="vertical" flexItem sx={{ mx: 0.5 }} />
         {showItemMenuButton && (
-          <UltraStyledTooltip title="Options" onClick={handleRequestItemMenu}>
+          <UltraStyledTooltip title="Optionen" onClick={handleRequestItemMenu}>
             <UltraStyledIconButton size="small">
               <MoreRoundedIcon />
             </UltraStyledIconButton>
           </UltraStyledTooltip>
         )}
-        <UltraStyledTooltip title="Cancel (Esc)">
+        <UltraStyledTooltip title="Abbrechen (Esc)">
           <UltraStyledIconButton size="small" onClick={onCancel}>
             <CloseRoundedIcon />
           </UltraStyledIconButton>
@@ -527,7 +527,7 @@ export function ZoneMenu(props: ZoneMenuProps) {
         sx={{ zIndex: 1501 }}
       >
         <UltraStyledTypography variant="body1" sx={{ padding: '10px 16px 10px 16px' }}>
-          {isEmbedded ? 'Delete' : 'Disassociate'} this item?
+          Dieses Element {isEmbedded ? 'löschen' : 'abhängen'}?
         </UltraStyledTypography>
         <MenuItem
           onClick={(e) => {
@@ -535,10 +535,10 @@ export function ZoneMenu(props: ZoneMenuProps) {
             setShowTrashConfirmation(false);
           }}
         >
-          <UltraStyledTypography>No</UltraStyledTypography>
+          <UltraStyledTypography>Nein</UltraStyledTypography>
         </MenuItem>
         <MenuItem onClick={(e) => refs.current.doTrash()}>
-          <UltraStyledTypography>Yes</UltraStyledTypography>
+          <UltraStyledTypography>Js</UltraStyledTypography>
         </MenuItem>
       </Menu>
     </>

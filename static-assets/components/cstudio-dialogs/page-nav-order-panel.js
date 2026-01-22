@@ -86,13 +86,15 @@ CStudioAuthoring.Dialogs.panelPageNavOrder = CStudioAuthoring.Dialogs.panelPageN
 
     var reorderHeadertextSpan = document.createElement('span');
     reorderHeadertextSpan.className = 'reorderHeadertext';
-    var txt = document.createTextNode('Edit Navigation Order');
+    var txt = document.createTextNode('Navigationsreihenfolge bearbeiten');
     reorderHeadertextSpan.appendChild(txt);
     YAHOO.util.Dom.get('reorderContainer').appendChild(reorderHeadertextSpan);
 
     var reorderSubtextDiv = document.createElement('div');
     reorderSubtextDiv.className = 'reorderSubtext';
-    txt = document.createTextNode('Drag and Drop "This Page" to the desired location in the navigation structure.');
+    txt = document.createTextNode(
+      '„Aktuelle Seite“ an die gewünschte Position in der Navigationsstruktur ziehen und ablegen.'
+    );
     reorderSubtextDiv.appendChild(txt);
     YAHOO.util.Dom.get('reorderContainer').appendChild(reorderSubtextDiv);
 
@@ -214,14 +216,14 @@ CStudioAuthoring.Dialogs.panelPageNavOrder = CStudioAuthoring.Dialogs.panelPageN
     dndOKButtonDiv.id = 'dndOKButton';
     dndOKButtonDiv.className = 'cstudio-xform-button btn btn-primary';
     dndOKButtonDiv.setAttribute('type', 'submit');
-    dndOKButtonDiv.setAttribute('value', 'OK');
+    dndOKButtonDiv.setAttribute('value', 'Bestätigen');
     dndOKButtonDiv.style.marginLeft = '15px';
 
     var dndCancelButtonDiv = document.createElement('input');
     dndCancelButtonDiv.id = 'dndCancelButton';
     dndCancelButtonDiv.className = 'cstudio-xform-button btn btn-default';
     dndCancelButtonDiv.setAttribute('type', 'submit');
-    dndCancelButtonDiv.setAttribute('value', 'Cancel');
+    dndCancelButtonDiv.setAttribute('value', 'Abbrechen');
 
     YAHOO.util.Dom.get('reorderButtonWrapper').appendChild(dndCancelButtonDiv);
     YAHOO.util.Dom.get('reorderButtonWrapper').appendChild(dndOKButtonDiv);

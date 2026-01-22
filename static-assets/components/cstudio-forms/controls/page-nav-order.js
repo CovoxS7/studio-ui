@@ -186,7 +186,7 @@ YAHOO.extend(CStudioForms.Controls.PageNavOrder, CStudioForms.CStudioFormField, 
     this.editPositionEl = editPositionEl;
     YAHOO.util.Dom.addClass(editPositionEl, 'btn btn-default btn-sm edit-position');
     editPositionEl.type = 'button';
-    editPositionEl.value = 'Edit Position';
+    editPositionEl.value = 'Position bearbeiten';
     editPositionEl.style.padding = '1px 5px';
     editPositionEl.style.marginLeft = '5px';
     editPositionEl.style.display = 'none';

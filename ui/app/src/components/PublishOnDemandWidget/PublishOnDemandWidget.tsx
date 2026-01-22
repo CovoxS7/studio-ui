@@ -489,7 +489,7 @@ export function PublishOnDemandWidget(props: PublishOnDemandWidgetProps) {
                               defaultMessage="Publish changes made in Studio via the UI"
                             />
                           }
-                          secondary="By path"
+                          secondary="Nach Pfad"
                         />
                       }
                       className={classes.byPathModeSelector}
@@ -508,7 +508,7 @@ export function PublishOnDemandWidget(props: PublishOnDemandWidgetProps) {
                               defaultMessage="Publish changes made via direct git actions against the repository or pulled from a remote repository"
                             />
                           }
-                          secondary="By tags or commit ids"
+                          secondary="Nach Tags oder Commit-IDs"
                         />
                       }
                     />
@@ -526,7 +526,7 @@ export function PublishOnDemandWidget(props: PublishOnDemandWidgetProps) {
                               defaultMessage="Publish everything"
                             />
                           }
-                          secondary="Publish all changes on the repo to the publishing target you choose"
+                          secondary="Veröffentlichen von allen Änderungen am Repository auf ein gewähltes Veröffentlichungsziel "
                         />
                       }
                     />

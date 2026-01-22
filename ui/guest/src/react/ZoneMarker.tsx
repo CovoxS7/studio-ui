@@ -192,7 +192,7 @@ export function ZoneMarker(props: ZoneMarkerProps) {
                         key={id}
                         arrow
                         // TODO: i18n
-                        title={`Drop target compatible with "${type?.name}" as ${Object.keys(modes)
+                        title={`Zielbereich kompatibel mit "${type?.name}" als ${Object.keys(modes)
                           .map((mode) => (mode === 'sharedExisting' ? 'existing shared' : mode))
                           .join(', ')}`}
                       >
@@ -214,19 +214,19 @@ export function ZoneMarker(props: ZoneMarkerProps) {
             {isLockedItem && (
               <Typography noWrap variant="body2" component="div">
                 {/* TODO: i18n */}
-                Locked by {lockInfo.username}
+                Gesperrt durch {lockInfo.username}
               </Typography>
             )}
             {!isEditable && !isLockedItem && (
               <Typography noWrap variant="body2" component="div">
                 {/* TODO: i18n */}
-                Not editable
+                Nicht bearbeitbar
               </Typography>
             )}
             {isStale && (
               <Typography noWrap variant="body2" component="div">
                 {/* TODO: i18n */}
-                Item was modified. Refresh to enable editing.
+                Dieses Element wurde geändert. Aktualisieren Sie die Seite, um die Bearbeitung zu aktivieren.
               </Typography>
             )}
             {menuItems && <Box sx={sx.menuItemsContainer}>{menuItems}</Box>}

@@ -48,5 +48,9 @@ defineMessages({
   site: {
     id: 'launcher.siteSectionTitle',
     defaultMessage: 'Project <muted>• {siteName}</muted>'
+  },
+  settings: {
+    id: 'words.settings',
+    defaultMessage: 'Settings'
   }
 });

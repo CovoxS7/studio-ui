@@ -179,7 +179,7 @@ export function FilterDropdown(props: FilterDropdownProps) {
                 inputLabel: { shrink: true }
               }}
               fullWidth
-              placeholder="e.g. /SOME/PATH/*"
+              placeholder="z.B. /PFAD/ZUM/*"
               onChange={(event) => setPath(event.target.value)}
               onKeyPress={(event) => onKeyPress(event, path)}
               value={path}
