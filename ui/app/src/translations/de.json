@@ -974,7 +974,7 @@
   "publishForm.publishingTargetRetry": "Wiederholen",
   "publishForm.publishingTargetSuccess": "Erfolg",
   "publishForm.requestApproval": "Genehmigung anfordern",
-  "publishForm.scheduling": "Zeitplanung",
+  "publishForm.scheduling": "Veröffentlichungszeitpunkt",
   "publishForm.schedulingLater": "Später",
   "publishForm.schedulingLaterDisabled": "Später (bei der ersten Veröffentlichung deaktiviert)",
   "publishForm.schedulingNow": "Jetzt",
